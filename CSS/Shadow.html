@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow
+    </title>
+        <style>
+            .container{
+                display: flex;
+            }
+            .card{
+                color: aliceblue;
+                padding: 20px 10px;
+                margin: 20px 10px;
+                /* border: 2px solid black; */
+                background-color: navy;
+                box-shadow: 5px 5px goldenrod;
+                box-shadow: -5px -5px cyan;
+                box-shadow: 10px 10px 5px cyan;
+                box-shadow: 5px 5px 5px 5pxpx cyan;
+                box-shadow: 5px 5px 5px 5px rgba(9, 252, 252, 0.5);
+
+                box-shadow: inset 5px 5px cyan;
+            }
+            .card h2{
+                text-shadow: 4px 4px black;
+                text-shadow: 4px 4px 8px black;
+                text-shadow: -4px -4px 8px black;
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ Course</h2>
+            <p>  I have starded C++ Course which does not mean that we will stop this course. We will continue this course to complettion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure in hic molestias nobis adipisci quae eaque ipsa ratione ut labore, quasi unde eveniet aliquid dicta, tenetur voluptatum! Repudiandae odio ipsam praesentium ducimus ullam accusantium.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure in hic molestias nobis adipisci quae eaque ipsa ratione ut labore, quasi unde eveniet aliquid dicta, tenetur voluptatum! Repudiandae odio ipsam praesentium ducimus ullam accusantium.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure in hic molestias nobis adipisci quae eaque ipsa ratione ut labore, quasi unde eveniet aliquid dicta, tenetur voluptatum! Repudiandae odio ipsam praesentium ducimus ullam accusantium.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | StringFunctions</title>
+</head>
+<body>
+    
+
+    <script>
+        var str="This is string";
+        console.log(str);
+
+        //Locates first occurence of a sub-string
+        var position=str.indexOf('is');
+        console.log(position);
+
+        //Locates last occurence of a sub-string
+        position=str.lastIndexOf('is');
+        console.log(position);
+
+        //Extraction od sub-string from a string
+        var substr=str.slice(1,6);
+        //var substr=str.substring(startIndex,lastIndex+1);
+        var substr=str.substring(1,6);
+        //var substr=str.substring(startIndex,lastIndex+1);
+        var substr=str.substr(1,6);
+        //var substr=str.substr(startIndex,length);
+        console.log(substr);
+
+        //Replacement of a sub-string with another substring
+        var replaced =str.replace('string','Harry');
+        console.log(str);
+        console.log(replaced);
+
+        //Changing case of strings 
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //Concatenation of strings
+        var newString= str.concat(' and this is New String');
+        console.log(newString);
+
+        //Removing all white-spaces at the start and end
+        var strWithWhiteSpaces="     This     Contains      Whitespaces      ";
+        console.log(strWithWhiteSpaces);
+        console.log(strWithWhiteSpaces.trim());
+
+        //Extraction of character from a string
+        var char3=str.charAt(2);
+        console.log(char3);
+
+        var char3=str.charCodeAt(2);
+        console.log(char3);
+
+        console.log(str[3]);
+
+    </script>
+</body>
+</html>

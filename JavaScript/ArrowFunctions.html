@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This is Arrow functions tutorial
+    </div>
+    <script>
+        function greet(){
+            console.log("Good Morning");
+        }
+        greet();
+
+        //Arrow Functions
+        greet2 = () =>console.log("Good Night");
+        greet2();
+
+        setTimeout(() => {
+            console.log("We are inside set timeout");
+        }, 3000);
+
+        sum = (a,b)=>a+b;
+        half = a =>a/2;
+        
+        let obj1={
+            greeting: "Suck my dick and ",
+            names: ["Lakshita","Sriparna","Aditi","Srija"],
+            speak(){
+                this.names.forEach((hoes)=>{
+                    console.log(this.greeting+"fuck me "+hoes);
+                });
+            }
+        }
+        obj1.speak();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Heading of size 2 -->
+    <h2>This is a HTML form</h2>
+    <!-- creating a form -->
+    <form action="backend.php">
+        <!-- creating label with id -->
+        <label for="name">Name</label>
+        <!-- creating a division -->
+        <div>
+            <!-- taking input of specific type and id -->
+            <input type="text" name="myName" id="name">
+        </div> <br>
+        <!-- line break -->
+        <label for="role">Role</label>
+       <div>
+            <input type="text" name="myRole" id="role">
+       </div> <br>
+       <!-- input type is email -->
+       <div>
+            Email: <input type="email" name="myEmail">
+        </div> <br>
+        <!-- input type is date -->
+        <div>
+            Date: <input type="date" name="myDate" >
+        </div> <br>
+        <!-- input type is number -->
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div> <br>
+        <!-- input type is checkbox -->
+        <div>
+            Are you eligible?: <input type="checkbox" value="myEligibility" checked>
+        </div> <br>
+        <!-- innput type is radio -->
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input type="radio"name="myGender">
+        </div> <br>
+        <!-- providing a text area for writing paragraphs of specified size -->
+        <div>
+            Write about yourslef: <br> <textarea name="" id="" cols="60" rows="10"></textarea>
+        </div> <br>
+        <div>
+            <label for="car">Car</label>
+            <!-- using select menu to provide the ineterpreter with multiple options -->
+            <select name="myCar" id="car">
+                <option value="ind"selected>Indica</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div> <br>
+        <div>
+            <!-- declaring input type as submit in order to submit the form -->
+            <input type="submit" value="Submit Now">
+            <!-- declaring input type as reset in order to reset the form -->
+            <input type="reset" value="Reset Now">
+        </div> <br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Math Objects</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Math Object tutorial</h1>
+    </div>
+    <script>
+        let m=Math;
+        console.log(m);
+        //Math Object - Contants
+        console.log("The value of Math.E is ",Math.E);
+        console.log("The value of Math.PI is ",Math.PI);
+        console.log("The value of Math.LN2 is ",Math.LN2);
+        console.log("The value of Math.LN10 is ",Math.LN10);
+        console.log("The value of Math.SQRT2 is ",Math.SQRT2);
+
+        //Math Object - Functions
+        let a=34.64534;
+        let b=89;
+        console.log("The value of a and b is ",a,b);
+
+        console.log("The value of a and b is ",Math.round(a),b);
+        console.log("3 raised to the power 2 is",Math.pow(3,2));       
+        console.log("Square root of 36 is ",Math.sqrt(36));       
+        console.log("Ceiling of 5.8 is ",Math.ceil(5.8));       
+        console.log("Floor of 5.8 is ",Math.floor(5.8));
+        console.log("Modulus value of -5.8 is ",Math.abs(-5.8));
+
+        //Trigonometric Functions
+        console.log("The value of sin(pi/2) ",Math.sin(Math.PI/2));
+        console.log("The value of cos(pi/2) ",Math.cos(Math.PI/2));
+        console.log("The value of tan(pi/2) ",Math.tan(Math.PI/2));
+
+        console.log("The minimum value of 14,5,16 is ",Math.min(14,5,16));
+        console.log("The maximum value of 14,5,16 is ",Math.max(14,5,16));
+
+        let r=Math.random();
+        console.log("The random number is ",r);
+        let x=50;
+        let y=60;
+        let rInRange=x+(y-x)*Math.random();
+        console.log("The random number is ",rInRange);
+
+        E: 2.718281828459045
+        LN2: 0.6931471805599453
+        LN10: 2.302585092994046
+        LOG2E: 1.4426950408889634
+        LOG10E: 0.4342944819032518
+        PI: 3.141592653589793
+        SQRT1_2: 0.7071067811865476
+        SQRT2: 1.4142135623730951
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        .container{
+            background-color: blue;
+            display: grid;
+            grid-template-areas: 
+            'image title title title'
+            'image text1 blank blank'
+            'image text2 blank2 button'
+        };
+        .item{
+            color: white;
+            border: 2px solid white;
+            background-color: orange;
+            margin: 50px;
+            padding: 15px 15px;
+        }
+        .btn{
+            color: white;
+            background-color:red;
+            border: 2px solid white;
+            margin: 10px;
+        }
+        #image{
+            grid-area: image;
+            color: white;
+            border: 2px solid white;
+            background-color: orange;
+            margin: 10px;
+            text-align: center;
+            padding: 75px;
+        }
+        #title{
+            grid-area: title;
+            color: white;
+            border: 2px solid white;
+            background-color: orange;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        #text1{
+            grid-area: text1;
+            color: white;
+            border: 2px solid white;
+            background-color: orange;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        #text2{
+            grid-area: text2;
+            color: white;
+            border: 2px solid white;
+            background-color: orange;
+            margin: 10px;
+            text-align: center;
+            
+        }
+        #blank{
+            grid-area: text2;
+            color: white;
+            border: 2px solid white;
+            background-color: orange;
+            margin: 10px;
+            text-align: center;
+        }
+        #blank2{
+            grid-area: text2;
+            color: white;
+            border: 2px solid white;
+            background-color: orange;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        #button{
+            grid-area: button;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="image" class="item">Image</div>
+        <div id="title" class="item">Title</div>
+        <div id="text1" class="item">Text 1</div>
+        <div id="text2" class="item">Text 2</div>
+        <div id="blank" class="item">blank</div>
+        <div id="blank2" class="item">Text2</div>
+        <button id="button" class="btn">Delete Button</button>
+    </div>
+</body>
+</html>

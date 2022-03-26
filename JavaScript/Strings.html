@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Strings</title>
+    <script>
+        var string="This,";
+        var name="Harry";
+        var channel="CodeWithHarry "
+        var message="Harry is a good boy";
+
+        //Concatenation of Strings
+        console.log(string+message);
+
+        var temp=`${name} is a nice person and he has a channel ${channel}`;
+        console.log(temp);
+
+        //Length function: Calculates length of the string
+        var len=name.length;
+        console.log(`Length of ${name} is ${len}`);
+
+        // Escape Sequences: 
+        // 1. \t=Tab 2. \n=New Line 3. \\=Displays one \
+        console.log("Hello\tWorld\nHarry");
+
+        //String Constructor
+        var y=new String("This");
+        console.log(y);
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempora culpa sequi accusamus mollitia ea, suscipit illo veniam voluptas cum, numquam ad error, delectus omnis? Blanditiis quibusdam itaque beatae consectetur adipisci voluptas maxime fugit?</p>
+    </div>
+
+    <script>
+        //Dynamic Insertion
+        document.getElementById('content').innerHTML='<h3>This is h3 heading</h3>'
+    </script>
+
+</body>
+</html>

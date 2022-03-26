@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Arrays & Objects</title>
+</head>
+<body>
+    <div class="container">Simple si html</div>
+
+    <script>
+        
+        let myVar=34;
+        let myVar1="string";
+        let myVar2=true;
+        let myVar4=null;
+        let myVar5=undefined;
+
+        //Objects
+        let employee={
+            name:"Harry",
+            salary:10000,
+            channel:"CodeWithHarry",
+            channel2:"ProgrammingWithHarry"
+        }
+        console.log(employee);
+
+        //Arrays
+        let name=[1,2,4,"Harry",undefined];
+        console.log(name);
+        let names=new Array(41,2,4,"Harry",undefined);
+        console.log(names);
+
+        //Length of the array
+        console.log(names.length);
+
+        //Sorting
+        names=names.sort();
+        console.log(names);
+
+        //Inserting element in an array
+        names.push("This is pushed");
+        console.log(names);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Gym Club</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Baloo+Bhaina+2:wght@500;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: 'Baloo Bhai 2', cursive;
+        background: url('https://cdn.thespaces.com/wp-content/uploads/2020/01/Gymshark-hero-crop.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        color: white;
+        height: 800px;
+    }
+    .left{
+        position: absolute;
+        left: 35px;
+        top: 35px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 30px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        position: absolute;
+        right: 35px;
+        top: 40px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        
+    }
+    .navbar{
+        display: inline-block;
+        font-size: 18px;
+    }
+    .navbar li{
+        display: inline-block;
+        color: white;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 30px 25px;
+    }
+    .navbar li a:hover, .navbar li a :active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .left img{
+        border-radius: 100%;
+        height: 70px;
+        width: 70px;
+    }
+    .left div{
+        line-height: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn{
+        margin: 0px 10px;
+        color: white;
+        background-color: rgb(2, 2, 34);
+        padding: 10px 15px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 65px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 25px;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 5px;
+        border: 2px solid black ;
+        margin: 10px auto;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .container h2{
+        text-align: center;
+        font-size: large
+    }
+    .container button{
+        display: block;
+        width: 400px;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://i.pinimg.com/736x/42/9d/63/429d631659a11a9eb666b103d811470a.jpg" alt="">
+            <div>Ahmed Gym Club</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+                <button class="btn" >Call Us</button>
+                <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Berhampore now!</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Email ID">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

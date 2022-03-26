@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Scope & Conditonals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+
+        var string1="This is a string";
+        var string1="This is a string2";
+        console.log(string1);
+
+        //Scope of a=u is global
+        let a="u";
+        {
+            //Scope of a=u6 in only inside this block
+            let a="u6";
+            console.log(a);
+        }
+        console.log(a);
+
+        const c="This cannot be changed";
+        console.log(c);
+        //c="I want to change this";
+        //Gives an error as value of a constant cannot be changed
+
+        //Conditionals
+        //If-else Ladder
+        let age=19;
+        if(age>18){
+            console.log("You are eligible to drive");
+        } else if(age==18) {
+            console.log("Apply for driving license");
+        } else {
+            console.log("You are not eligible to drive");
+        }
+
+        //Switch Case
+        const day="Funday";
+        switch (day) {
+            case "Monday":
+                console.log("Weekday");
+                break;
+            case "Tuesday":
+                console.log("Weekday");
+                break;
+            case "Wednesday":
+                console.log("Weekday");
+                break;
+            case "Thursday":
+                console.log("Weekday");
+                break; 
+            case "Friday":
+                console.log("Weekday");
+                break; 
+            case "Saturday":
+                console.log("Weekend");
+                break; 
+            case "Sunday":
+                console.log("Weekend");
+                break;                
+            default: console.log("Invalid");
+                break;
+        }
+
+    </script>
+</body>
+</html>

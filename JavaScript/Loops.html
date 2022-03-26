@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about Loops
+    </div>
+    <script>
+        
+        console.log("This is Loops tutorial");
+        //forLoop
+        let i;
+        for(i=0;i<3;i++){
+                console.log(i);
+        }
+
+        //arrayDeclaration
+        let hoes=["Namrata","Prakity","Parnali","Pauli","Ritashree"];
+        //forLoop for anArray
+        for (let i = 0; i < hoes.length; i++) {
+            console.log("I want to Fuck "+hoes[i]);
+        }
+        //forEachLoop for anArray
+        hoes.forEach(function f(element){
+            console.log("Lets fuck "+element+".I am so horny baby!");
+        })
+        //forOfLoop for anArray
+        for (element of hoes){
+            console.log("Come here "+element.slice(0,3)+".Lets makeout!");
+        }
+
+        //objectDeclaration
+        let employee={
+            name:"Harry",
+            salary:20000,
+            channel:"CWH"
+        }
+        //forInLoop for anObject
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        //whileLoop in JS
+        let j=0;
+        while(j<4){
+            console.log(`${j} is less than 4`);
+            j++;
+        }
+
+        //doWhileLoop in JS
+        let k=0;
+        do{
+            console.log(`${k} is less than 5`);
+            k++;
+        }while(k<5);
+
+    </script>
+</body>
+</html>
