@@ -9,11 +9,27 @@
        include ../static/style.css
 </head>
 <body>
-    <h1>This is heading</h1>
-    <p>
-        | #{content}
-        <!-- This is a plain html using pug -->
-    </p>
-    
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Get this gym membership for Rs.399/-only - Fill this form now!</h2>
+        <!-- <p>
+            | #{content}
+            |This is a plain html using pug
+        </p> -->
+        <form action="/" method="post" id="contact">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <textarea name="address" id="address" placeholder="Enter your address" cols="30" rows="10"></textarea>
+            <textarea name="more" id="more" placeholder="Say more about yourself!" cols="30" rows="10"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
