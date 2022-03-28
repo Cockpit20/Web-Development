@@ -1,5 +1,4 @@
 const express = require("express");//Imported Express Module
-const { fstat } = require("fs");
 const path=require("path");
 const fs=require("fs");
 const app=express(); //Created and intialized an express app
