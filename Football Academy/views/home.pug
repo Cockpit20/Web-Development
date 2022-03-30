@@ -1,0 +1,62 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js") 
+
+block style
+    style 
+        include ../static/style.css
+
+block content
+    nav#navbar 
+        ul
+            div#logo
+                img(src="/static/img/cfa_logo.png", alt="Not Found") 
+                | CFA 
+            li #[a(href="/") Home] 
+            li #[a(href="/") Intro] 
+            li #[a(href="/") Coaches] 
+            li #[a(href="/") Gallery] 
+            li #[a(href="/admission") Admission Form]
+
+    section#introSection 
+        div Welcome To Chandra Football Academy 
+        div.small Passion Always Dominates  ...
+
+    section#coachesSection  
+        h1 Our Coaches 
+        div.card 
+            h3 Head Coach  
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/")
+                div.card-content 
+                    p Soumyadeep Chandra 
+        div.card 
+            h3 Assistant Coach  
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/card2.png")
+                div.card-content 
+                    p Zunaid Ahmed 
+        div.card 
+            h3 Fitness Coach 
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/card3.png")
+                div.card-content 
+                    p Zaheer Ahmed
+        div.card 
+            h3 GK Coach 
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/card3.png")
+                div.card-content 
+                    p Souvik Chowdhury     
+    section#gallerySection 
+        h1 Our Gallery  
+    
+
+block foot 
+    footer#footer 
+        |Copyright © 2002 | www.cfa.com | All Rights Reserved 

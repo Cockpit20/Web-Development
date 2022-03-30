@@ -1,0 +1,135 @@
+//Take reference from the Dance Website
+Basic things required to build the website:
+1.HTML
+2.CSS
+3.JS
+4.NodeJS
+a.EXPRESS
+b.PUG (to be used as HTML to write the content)
+5.MongoDB
+a.MONGOOSE
+
+Create app.JS
+
+//Import the modules (express,fs,path,app,port)
+const module-name=require("module");
+//const app=express();
+const port=any;
+
+//Serve the static files using express
+app.use('/static',express.static('static'))
+//Encode the url using express
+app.use(express.urlencoded());
+
+//Set pug as the template engine
+app.set('view-engine','pug');
+//Join the views directory with app.JS
+app.set('views',path.join(__dirname,'views'));
+
+/Create a get request for '/' endpoint
+app.get('end-point',(req,res)=>{
+    res.status(200).render('file for page to be displayed at / endpoint');
+})
+
+//Start the server
+app.listen(port,()=>{
+    console.log(`The server has started successfully on port ${port}`);
+});
+ 
+//app.js ends here --------------------------------------------------------
+
+Now, we have imported express module and used pug as the template engine in our backend server
+//So we need to install them
+code: npm init which creates the package.json file which keep track of the dependecies installed
+node modules, package.json ,package-lock.json are thus created
+
+//--------------------------------------------------------------------------
+
+We have served static files in our server which is needed to created as a folder under the main folder
+Also, we have connected the views directory in our server using pug template engine
+
+Static and Views folders are thus created
+View folder: contains the pug files (index,base,home,admission)
+Static folder: contains the style.css,styleAdmission.css, index.js, fbg.png and image folder.
+
+Style.css: will be used for design purposes
+index.js: (not used)
+img folder: will contain all the images to be used in the website (to be downloaded as per needed)
+
+Pug Files:
+index.pug contains the whole content where style.css and index.js will be included
+base.pug contains the outline of a generic pug file which is extended to create the home.pug and admission.pug files
+home.pug contains only the home page (same as index.pug)
+admission.pug contains the admission form only.
+
+//This is the outline of a website with both front end and backend
+--------------------------------------------------------------------------------
+
+Now we continue to write the content in index.pug (Ignore - Not Required)
+Use style.css for designing the website (VVI to be included in pug files) simulataneously
+
+Before that Copy the outline and keep in base.pug, home.pug and admission.pug 
+(include the css and js files too now.) in block scripts and block styles respectively
+
+---------------------------------------------------------------------------------
+
+Now focus only on index.pug and style.css ------We're here Now!
+//We copy the home.pug and style.css from a refernce website and modify it as per our requirements
+
+-----------------------------------------------------------------------------------
+Now we move on to admission.pug and styleAdmission.css ,where we do the same things!
+------------------------------------------------------------------------------------
+
+Now we are done with the designing of our website!
+We now move on to the MongoDB to extract data from the admission form filled!(in app.js)
+
+Create a post request for the admission endpoint which returns the data entered through the form
+(take referencefrom the Dance Website)
+
+Import the MONGOOSE module:
+const mongoose=require("mongoose")
+npm i mongoose (in the terminal)
+
+Connect the database to the server using mongoose:
+main().catch(err => console.log(err))
+async function main(){
+    await mongoose.connect('mongodb://localhost/admissionFootball');
+    console.log("We are connected ... ");
+}
+
+Define the mongoose schema:
+const admissionSchema= new mongoose.Schema({
+    name(name,phone,email): return-type (String)
+})
+
+Finalise the schema, creating a mongoose model:
+const Admission=mongoose.model('Admission',admissionSchema);
+
+Collect the data from the post request save it to the database with a suitable message depending on whether it is saved or not
+app.post('end-point',(req,res)=>{
+    //Collect the data and store it to variable
+    var myData=new Admission(req.body);
+    //Save the collected data by sending it to the data base
+    myData.save().then()=>{
+        res.send("Success Message")
+    }.catch(()=>{
+        res.status(404).send("Error/Fail message")
+    })
+})
+
+-------------------------------------------------------------------------------------------------------
+
+<<<<<<<<<<<<<<<<<                     WEBSITE CREATED SUCCESSFULLY              >>>>>>>>>>>>>>>>>>>>>>>
+
+-------------------------------------------------------------------------------------------------------
+Terminals :
+In terminal 1: type 'mongod' to start the mongo database
+In terminal 2: type 'mongo' to open the mongo shell to access the data
+                show dbs : displays the list of databases
+                use admissionFootball (db): to switch to that data base
+                show collections : displays the list of collections under the database
+                db.admissions.find() : to access data stored in the data base
+In terminal 3: Run the server 
+                node ./app.js
+Press ctrl+c to end any running process in the terminal
+--------------------------------------------------------------------------------------------------------

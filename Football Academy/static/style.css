@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 15px;
+    font-size: 30px;
+    margin-right: 100px;
+}
+#logo img{
+    height: 100px;
+}
+#navbar{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    background-color: rgba(255, 49, 0);
+    padding: 5px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#navbar li{
+    list-style: none; 
+}
+#navbar li  a{
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 20px;
+}
+#navbar li  a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px 25px;
+}
+#introSection{
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+    background: center / cover no-repeat url("../static/img/bg.jpeg");
+    opacity: 0.75;
+    height: 425px;
+}
+#introSection div.small{
+    font-size: 50px;
+    padding: 10px;
+}
+#coachesSection{
+    height: 375px;
+    margin: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+#coachesSection h1{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding-top: 25px;
+}
+.card{
+    display: inline-block;
+    background-color: orangered;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 20%;
+    margin: 30px;
+    height: 220px;
+}
+.card h3{
+    text-align: center;
+    margin: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 130px;
+    padding: 0px 15px;
+    margin: 5px 10px;
+}
+.card-img img{
+    height: inherit;
+}
+.card-content{
+    padding: 0px 15px;
+
+}
+.card-content p{
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#gallerySection{
+    height: 300px;
+    background: center / cover no-repeat url("../static/img/gal.jpg");
+    opacity: 0.875;
+    z-index: -1;
+    color: white;
+}
+#gallerySection h1{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding-top: 25px;
+}
+#gallery{
+    height: 175px;
+    max-width: 1000px;
+    margin: 25px 320px;
+}
+#footer{
+    display: flex;
+    height: 100px;
+    background-color: rgba(60, 60, 60);
+    color: yellow;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
