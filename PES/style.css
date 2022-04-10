@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: navy;
+}
+
 .konami-logo {
     background-color: black;
     padding: 10px 15px;
@@ -260,4 +264,146 @@ footer p {
     font-family: 'Allerta Stencil';
     font-weight: 1;
     font-size: 12.5px;
+}
+
+.Game-Overview-Heading{
+    background-color: yellow;
+    color: navy;
+    text-align: center;
+    font-family: 'Allerta Stencil';
+    font-weight: 1;
+    font-size: 20px;
+}
+
+.bg{
+    height: 500px;
+    background: url('home2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.bg h1{
+    text-align: center;
+    color: yellow;
+    font-family: 'Allerta Stencil';
+    font-weight: 1;
+    padding: 20px;
+    z-index: -1;
+}
+
+.bg p{
+    text-align: center;
+    color: yellow;
+    font-family: 'Allerta Stencil';
+    font-weight: 1;
+    padding: 0px 250px;
+    z-index: -1;
+}
+
+.Kick-Off{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    background-color: yellow;
+    color: navy;
+    padding: 10px 0px;
+    font-family: 'Allerta Stencil';
+    margin: 20px auto;
+    border-top: 1px solid yellow;
+    border-radius: 50px;
+}
+
+.Main-Features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 75%;
+    padding-bottom: 50px;
+}
+
+.Main-Features h1{
+    color: yellow;
+    padding: 10px 30px;
+    font-family: 'Allerta Stencil';
+    font-weight: 1;
+}
+.Main-Features h2{
+    color: yellow;
+    padding: 10px 40px;
+    font-family: 'Allerta Stencil';
+    font-weight: 1;
+}
+.Main-Features p{
+    color: white;
+    padding: 0px 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 1;
+    font-size: 15px;
+}
+.Main-Features ul{
+    padding: 20px 60px;
+    padding-bottom: 0;
+}
+.Main-Features li{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 1;
+    font-size: 15px;
+}
+
+.Main-Features .Kick-Off{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: yellow;
+    color: navy;
+    padding: 10px 0px;
+    font-family: 'Allerta Stencil';
+    margin: 20px auto;
+    border-top: 1px solid yellow;
+    border-radius: 50px;
+}
+
+.Main-Features .para{
+    padding: 30px;
+    border: 1px solid white;
+    margin: 30px;
+}
+
+.Main-Features .para p{
+    padding: 10px;
+
+}
+
+.White-Container{
+    border: 1px solid white;
+    margin: 30px;
+}
+.White-Container .White-Heading{
+    background-color: white;
+    color: navy;
+    padding: 10px 30px;
+}
+.White-Container .White-Heading h3{
+    font-family: 'Allerta Stencil';
+    font-weight: bolder;
+}
+.White-Container p{
+    padding: 20px 40px;
+}
+.White-Container ul{
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.Develop{
+    margin-bottom: 20px;
+}
+
+.Main-Features .More-Heading{
+    margin-top: 30px;
+    margin-bottom: -40px;
 }
