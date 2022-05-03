@@ -29,7 +29,7 @@ body{
     padding-left: 10px;
 }
 #navbar a{
-    color: grey;
+    color: gainsboro;
 }
 #navbar a:hover{
     color: white;
